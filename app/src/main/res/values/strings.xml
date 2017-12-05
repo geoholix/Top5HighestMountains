@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Top5HighestMountain</string>
+    <string name="intro">Indonesia is the largest archipelago in the world and Most of Indonesia is mountainous. The Highest Mountains separated on the islands of Sumatra, Java, , Papua and NTB. The country\'s tallest mountains located in the Jayawijaya Mountains that has enternal SNOW.
+    \n This app will bring you to the top 5 of Highest Mountains in Indonesia</string>
+
+    <string name="title_activity_number1">number1Activity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="start">Start</string>
 </resources>
