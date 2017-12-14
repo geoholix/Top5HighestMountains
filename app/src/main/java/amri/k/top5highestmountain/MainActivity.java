@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void StartApp(View view) {
-        Intent pindah5 = new Intent(MainActivity.this, number1Activity.class);
+        Intent pindah5 = new Intent(MainActivity.this, Number5Activity.class);
         startActivity(pindah5);
     }
 }

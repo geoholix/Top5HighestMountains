@@ -21,10 +21,8 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
-            android:name=".number1Activity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-
+        <activity android:name=".Number5Activity"
+                  android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
     </application>
 
