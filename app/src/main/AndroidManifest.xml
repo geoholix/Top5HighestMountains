@@ -18,12 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".Number5Activity"
-                  android:theme="@style/Theme.AppCompat.NoActionBar">
-        </activity>
+        <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Number5Activity" android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Number4Activity" android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Number3Activity" android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Number2Activity" android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Number1Activity" android:theme="@style/Theme.AppCompat.NoActionBar" ></activity>
     </application>
 
 </manifest>
