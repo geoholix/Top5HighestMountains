@@ -30,4 +30,9 @@ public class Number1Activity extends AppCompatActivity {
         Intent pindah2 = new Intent(Number1Activity.this, Number2Activity.class);
         startActivity(pindah2);
     }
+
+    public void GoToEnd(View view) {
+        Intent feedback = new Intent(Number1Activity.this, FeedbackActivity.class);
+        startActivity(feedback);
+    }
 }

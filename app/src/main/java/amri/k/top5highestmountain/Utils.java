@@ -4,7 +4,9 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.widget.EditText;
 import android.widget.Toast;
+import android.content.pm.PackageManager;
 
 /**
  * Created by amri on 12/6/2017.
@@ -38,4 +40,13 @@ public class Utils {
         }
 
     }
+
+    public static void composeEmail(Context context, String subject, String body) {
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        emailIntent.setData(Uri.parse("mailto:amri.geoholic@gmail.com"));
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        emailIntent.putExtra(Intent.EXTRA_TEXT, body);
+        context.startActivity(Intent.createChooser(emailIntent, "Send Email.."));
+    }
+
 }

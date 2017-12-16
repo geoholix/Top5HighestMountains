@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/backgroud"
+    tools:context=".FeedbackActivity">
+
+
+    <ImageView
+        android:id="@+id/image_thankyou"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="48dp"
+        android:src="@drawable/thankyou" />
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image_thankyou"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/greetings"/>
+
+
+
+    <EditText
+        android:id="@+id/editTextFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="16dp"
+        android:hint="someone"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editTextSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextFrom"
+        android:layout_below="@+id/editTextFrom"
+        android:layout_marginTop="18dp"
+        android:hint="Feedback"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextSubject"
+        android:layout_below="@+id/editTextSubject"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextFrom"
+        android:layout_alignBottom="@+id/editTextFrom"
+        android:layout_alignParentLeft="true"
+        android:text="From:" />
+
+    <TextView
+        android:id="@+id/textViewSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextSubject"
+        android:layout_alignBottom="@+id/editTextSubject"
+        android:layout_alignParentLeft="true"
+        android:text="Subject:" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextMessage"
+        android:layout_alignBottom="@+id/editTextMessage"
+        android:layout_alignParentLeft="true"
+        android:text="Message:" />
+
+    <Button
+        android:id="@+id/buttonSendEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextMessage"
+        android:layout_below="@+id/editTextMessage"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="Send"
+        android:background="@color/colorPrimary"
+        android:onClick="sendEmail"/>
+
+</RelativeLayout>

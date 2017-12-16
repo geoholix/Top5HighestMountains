@@ -24,7 +24,6 @@ public class FeedbackActivity extends AppCompatActivity {
         EditText message = findViewById(R.id.editTextMessage);
         String bodyMessage = "This Message sent from: " + fromText;
         bodyMessage += "\n input for this app: " + message.getText().toString();
-
         Utils.composeEmail(this, subjectText, bodyMessage);
         finish();
     }
